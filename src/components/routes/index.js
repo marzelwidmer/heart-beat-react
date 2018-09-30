@@ -17,10 +17,10 @@ const Routes = () => (
       />
       <Scene
         key="about"
-        backTitle="Zrog"
-        backButtonTextStyle={styles.navBack}
-        navBarButtonColor="#FF3B30"
-        backButtonTintColor="#FF3B30"
+        backTitle="Zrug"
+        // backButtonTextStyle={styles.navBack}
+        // navBarButtonColor="#FF3B30"
+        // backButtonTintColor="#FF3B30"
         component={About}
         title="About"
       />
