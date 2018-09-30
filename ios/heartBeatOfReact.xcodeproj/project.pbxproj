@@ -39,6 +39,13 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		C052E2472160F88A00FB2EBE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C052E2452160F88900FB2EBE /* Interface.storyboard */; };
+		C052E2492160F88B00FB2EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C052E2482160F88B00FB2EBE /* Assets.xcassets */; };
+		C052E2502160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C052E24F2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C052E2552160F88B00FB2EBE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052E2542160F88B00FB2EBE /* InterfaceController.swift */; };
+		C052E2572160F88B00FB2EBE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C052E2562160F88B00FB2EBE /* ExtensionDelegate.swift */; };
+		C052E2592160F88C00FB2EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C052E2582160F88C00FB2EBE /* Assets.xcassets */; };
+		C052E25D2160F88C00FB2EBE /* heartBeatOfReact WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C052E2432160F88900FB2EBE /* heartBeatOfReact WatchKit App.app */; };
 		C075DFBE215F6E330032C85F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C075DFBD215F6E330032C85F /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -316,6 +323,20 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		C052E2512160F88B00FB2EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C052E24E2160F88B00FB2EBE;
+			remoteInfo = "heartBeatOfReact WatchKit App Extension";
+		};
+		C052E25B2160F88C00FB2EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C052E2422160F88900FB2EBE;
+			remoteInfo = "heartBeatOfReact WatchKit App";
+		};
 		C075DFBA215F6E040032C85F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 968F921F1FDB42438EF24BF8 /* RCTAppleHealthKit.xcodeproj */;
@@ -324,6 +345,31 @@
 			remoteInfo = RCTAppleHealthKit;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C052E2892160F88C00FB2EBE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C052E2502160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C052E28B2160F88C00FB2EBE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C052E25D2160F88C00FB2EBE /* heartBeatOfReact WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -353,6 +399,15 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		968F921F1FDB42438EF24BF8 /* RCTAppleHealthKit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTAppleHealthKit.xcodeproj; path = "../node_modules/rn-apple-healthkit/RCTAppleHealthKit.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C052E2432160F88900FB2EBE /* heartBeatOfReact WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "heartBeatOfReact WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C052E2462160F88A00FB2EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C052E2482160F88B00FB2EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C052E24A2160F88B00FB2EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C052E24F2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "heartBeatOfReact WatchKit App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C052E2542160F88B00FB2EBE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C052E2562160F88B00FB2EBE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C052E2582160F88C00FB2EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C052E25A2160F88C00FB2EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C075DFBC215F6E330032C85F /* heartBeatOfReact.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = heartBeatOfReact.entitlements; path = heartBeatOfReact/heartBeatOfReact.entitlements; sourceTree = "<group>"; };
 		C075DFBD215F6E330032C85F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		E097F8659D2141DB8F228422 /* libRCTAppleHealthKit.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTAppleHealthKit.a; sourceTree = "<group>"; };
@@ -408,6 +463,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C052E24C2160F88B00FB2EBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +655,8 @@
 				13B07FAE1A68108700A75B9A /* heartBeatOfReact */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* heartBeatOfReactTests */,
+				C052E2442160F88900FB2EBE /* heartBeatOfReact WatchKit App */,
+				C052E2532160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C075DF91215F6DFD0032C85F /* Recovered References */,
@@ -609,6 +673,8 @@
 				00E356EE1AD99517003FC87E /* heartBeatOfReactTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* heartBeatOfReact-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* heartBeatOfReact-tvOSTests.xctest */,
+				C052E2432160F88900FB2EBE /* heartBeatOfReact WatchKit App.app */,
+				C052E24F2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -620,6 +686,27 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C052E2442160F88900FB2EBE /* heartBeatOfReact WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C052E2452160F88900FB2EBE /* Interface.storyboard */,
+				C052E2482160F88B00FB2EBE /* Assets.xcassets */,
+				C052E24A2160F88B00FB2EBE /* Info.plist */,
+			);
+			path = "heartBeatOfReact WatchKit App";
+			sourceTree = "<group>";
+		};
+		C052E2532160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C052E2542160F88B00FB2EBE /* InterfaceController.swift */,
+				C052E2562160F88B00FB2EBE /* ExtensionDelegate.swift */,
+				C052E2582160F88C00FB2EBE /* Assets.xcassets */,
+				C052E25A2160F88C00FB2EBE /* Info.plist */,
+			);
+			path = "heartBeatOfReact WatchKit App Extension";
 			sourceTree = "<group>";
 		};
 		C075DF91215F6DFD0032C85F /* Recovered References */ = {
@@ -667,10 +754,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				C052E28B2160F88C00FB2EBE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C052E25C2160F88C00FB2EBE /* PBXTargetDependency */,
 			);
 			name = heartBeatOfReact;
 			productName = "Hello World";
@@ -713,12 +802,47 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* heartBeatOfReact-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C052E2422160F88900FB2EBE /* heartBeatOfReact WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C052E28A2160F88C00FB2EBE /* Build configuration list for PBXNativeTarget "heartBeatOfReact WatchKit App" */;
+			buildPhases = (
+				C052E2412160F88900FB2EBE /* Resources */,
+				C052E2892160F88C00FB2EBE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C052E2522160F88B00FB2EBE /* PBXTargetDependency */,
+			);
+			name = "heartBeatOfReact WatchKit App";
+			productName = "heartBeatOfReact WatchKit App";
+			productReference = C052E2432160F88900FB2EBE /* heartBeatOfReact WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C052E24E2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C052E2882160F88C00FB2EBE /* Build configuration list for PBXNativeTarget "heartBeatOfReact WatchKit App Extension" */;
+			buildPhases = (
+				C052E24B2160F88B00FB2EBE /* Sources */,
+				C052E24C2160F88B00FB2EBE /* Frameworks */,
+				C052E24D2160F88B00FB2EBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "heartBeatOfReact WatchKit App Extension";
+			productName = "heartBeatOfReact WatchKit App Extension";
+			productReference = C052E24F2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
@@ -743,6 +867,16 @@
 						DevelopmentTeam = E9YX4X8TYH;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					C052E2422160F88900FB2EBE = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = E9YX4X8TYH;
+						ProvisioningStyle = Automatic;
+					};
+					C052E24E2160F88B00FB2EBE = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = E9YX4X8TYH;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -817,6 +951,8 @@
 				00E356ED1AD99517003FC87E /* heartBeatOfReactTests */,
 				2D02E47A1E0B4A5D006451C7 /* heartBeatOfReact-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* heartBeatOfReact-tvOSTests */,
+				C052E2422160F88900FB2EBE /* heartBeatOfReact WatchKit App */,
+				C052E24E2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -1122,6 +1258,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C052E2412160F88900FB2EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C052E2492160F88B00FB2EBE /* Assets.xcassets in Resources */,
+				C052E2472160F88A00FB2EBE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C052E24D2160F88B00FB2EBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C052E2592160F88C00FB2EBE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1190,6 +1343,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C052E24B2160F88B00FB2EBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C052E2572160F88B00FB2EBE /* ExtensionDelegate.swift in Sources */,
+				C052E2552160F88B00FB2EBE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1203,6 +1365,16 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* heartBeatOfReact-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		C052E2522160F88B00FB2EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C052E24E2160F88B00FB2EBE /* heartBeatOfReact WatchKit App Extension */;
+			targetProxy = C052E2512160F88B00FB2EBE /* PBXContainerItemProxy */;
+		};
+		C052E25C2160F88C00FB2EBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C052E2422160F88900FB2EBE /* heartBeatOfReact WatchKit App */;
+			targetProxy = C052E25B2160F88C00FB2EBE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1213,6 +1385,14 @@
 			);
 			name = LaunchScreen.xib;
 			path = heartBeatOfReact;
+			sourceTree = "<group>";
+		};
+		C052E2452160F88900FB2EBE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C052E2462160F88A00FB2EBE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1557,6 +1737,126 @@
 			};
 			name = Release;
 		};
+		C052E25E2160F88C00FB2EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E9YX4X8TYH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = heartBeatOfReact_WatchKit_App_Extension;
+				INFOPLIST_FILE = "heartBeatOfReact WatchKit App/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.heartBeatOfReact.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		C052E25F2160F88C00FB2EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E9YX4X8TYH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = heartBeatOfReact_WatchKit_App_Extension;
+				INFOPLIST_FILE = "heartBeatOfReact WatchKit App/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.heartBeatOfReact.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		C052E2602160F88C00FB2EBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E9YX4X8TYH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "heartBeatOfReact WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.heartBeatOfReact.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		C052E2612160F88C00FB2EBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E9YX4X8TYH;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "heartBeatOfReact WatchKit App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.heartBeatOfReact.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1601,6 +1901,24 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C052E2882160F88C00FB2EBE /* Build configuration list for PBXNativeTarget "heartBeatOfReact WatchKit App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C052E2602160F88C00FB2EBE /* Debug */,
+				C052E2612160F88C00FB2EBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C052E28A2160F88C00FB2EBE /* Build configuration list for PBXNativeTarget "heartBeatOfReact WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C052E25E2160F88C00FB2EBE /* Debug */,
+				C052E25F2160F88C00FB2EBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
